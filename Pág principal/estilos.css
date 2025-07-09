@@ -1,0 +1,208 @@
+
+body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #fff;
+      color: #000;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+    .profile-pic img{
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        margin-left: 70px;
+        margin-top: 70px;
+    }
+    .search-profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .search-profile input[type="text"] {
+      padding: 8px 12px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      width: 200px;
+    }
+    .search-profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    .cards-container {
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin-left: 150px;
+    }
+    .card {
+      background-color: #d3d3d3;
+      padding: 20px;
+      border-radius: 20px;
+      width: 250px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .card-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    .card-header .info {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      flex-grow: 1;
+    }
+    .card-header .info .name {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .card-header .info .date {
+      font-size: 12px;
+    }
+    .card-content {
+      font-size: 14px;
+    }
+    .card-content .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .card-content a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .card-content a:hover {
+      text-decoration: underline;
+    }
+/*-----------------------------Menú desplegable-----------------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.capa {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+/*Estilos para el encabezado*/
+
+
+.container .btn-menu,
+.logo {
+  float: left;
+  line-height: 100px;
+}
+.container .btn-menu label {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+.logo h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  margin-left: 10px;
+}
+.container .menu {
+  float: right;
+  line-height: 100px;
+}
+.container .menu a {
+  display: inline-block;
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.container .menu a:hover {
+  border-bottom: 2px solid #c7c7c7;
+  padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+#btn-menu {
+  display: none;
+}
+.container-menu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.cont-menu {
+  width: 100%;
+  max-width: 250px;
+  background: #1c1c1c;
+  height: 100vh;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%);
+}
+.cont-menu nav {
+  transform: translateY(15%);
+}
+.cont-menu nav a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #c7c7c7;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+.cont-menu nav a:hover {
+  border-left: 5px solid #c7c7c7;
+  background: #1f1f1f;
+}
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}

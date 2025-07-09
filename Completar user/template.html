@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Completa tu perfil</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <h1>Completa tu perfil</h1>
+
+  <div class="form-container">
+    <!-- Columna Izquierda -->
+    <div class="column">
+      <div class="form-group">
+        <label>Informacion Personal</label>
+        <div class="row">
+          <input type="text" placeholder="Nombre">
+          <input type="text" placeholder="Apellido">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Fecha de nacimiento</label>
+        <div class="row">
+          <input type="text" placeholder="Día">
+          <input type="text" placeholder="Mes">
+          <input type="text" placeholder="Año">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Direccion y Contacto</label>
+        <input type="text" placeholder="Ciudad">
+        <div class="row">
+          <input type="text" placeholder="Barrio">
+          <input type="text" placeholder="Télefono">
+        </div>
+        <div class="row">
+          <input type="text" placeholder="Calle1">
+          <input type="text" placeholder="Calle2">
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna Derecha -->
+    <div class="column">
+      <div class="form-group">
+        <label for="tipo">Tipo Usuario</label>
+        <select id="tipo">
+          <option>Prestamista</option>
+          <option>Prestatario</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="section-title">Prestamista</label>
+        <input type="text" placeholder="Capital para prestar">
+      </div>
+
+      <div class="form-group">
+        <label class="section-title">Prestatario</label>
+        <input type="text" placeholder="Nombre del negocio">
+        <input type="text" placeholder="Ingreso Mensual">
+      </div>
+
+      <div class="form-group">
+        <label class="section-title">Dirección Negocio</label>
+        <div class="row">
+          <input type="text" placeholder="Ciudad">
+          <input type="text" placeholder="Barrio">
+        </div>
+        <div class="row">
+          <input type="text" placeholder="Calle1">
+          <input type="text" placeholder="Calle2">
+        </div>
+      </div>
+      <div class="nav">
+        <a class="active" href="#">Guardar</a>
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+</html>
