@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crear Préstamo</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <div class="btn-menu">
+          <label for="btn-menu">☰</label>
+    </div>
+    <h1>Findex</h1>
+    <div class="search-profile">
+      <input type="text" placeholder="Search...">
+    </div>
+  </header>
+ <div class="capa"></div>
+    <!--	--------------->
+    <input type="checkbox" id="btn-menu" />
+    <div class="container-menu">
+      <div class="cont-menu">
+        <div class="profile-pic">
+          <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Prestamista">
+        </div>
+        <nav>
+          <a href="#">Perfil</a>
+          <a href="#">Crear préstamo</a>
+          <a href="#">Registar pago</a>
+        </nav>
+        <label for="btn-menu">✖️</label>
+      </div>
+    </div>
+  </div>
+  <h1>Crear Prestamos</h1>
+  <div class="container">
+    <!-- Formulario -->
+    <div class="form-section">
+      <h2>Prestamista Juan</h2>
+      <div class="form-group">
+        <label>Código del Préstamo: A0DKD94-34</label>
+      </div>
+
+      <div class="form-group">
+        <input type="number" placeholder="Monto">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <select>
+            <option disabled selected>Frecuencia de pagos</option>
+            <option>Semanal</option>
+            <option>Quincenal</option>
+            <option>Mensual</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Tasa de interés">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <select>
+          <option disabled selected>Cuotas</option>
+          <option>6</option>
+          <option>12</option>
+          <option>24</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <input type="text" placeholder="Monto por cuota">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <input type="date" placeholder="Fecha de publicación">
+        </div>
+        <div class="form-group">
+          <select>
+            <option disabled selected>Estado</option>
+            <option>Activo</option>
+            <option>Inactivo</option>
+          </select>
+        </div>
+      </div>
+
+      <button>Enviar</button>
+    </div>
+
+    <!-- Calendario -->
+    <div class="calendar">
+      <h3>May 2025</h3>
+      <table>
+        <tr>
+          <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th>
+        </tr>
+        <tr><td class="disabled">28</td><td class="disabled">29</td><td class="disabled">30</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+        <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr>
+        <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
+        <tr><td class="selected">19</td><td class="grey">20</td><td class="grey">21</td><td class="grey">22</td><td class="grey">23</td><td>24</td><td>25</td></tr>
+        <tr><td>26</td><td>27</td><td>28</td><td class="disabled">29</td><td class="disabled">30</td><td class="disabled">31</td><td class="disabled">1</td></tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
